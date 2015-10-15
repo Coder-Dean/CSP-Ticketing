@@ -1,0 +1,94 @@
+    Public Class Form1
+     
+        Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+            Dim objWordApp As Object = CreateObject("Word.Application")
+            Dim objWordDoc As Object = objWordApp.Documents.Add()
+     
+            objWordDoc.Range.Delete()
+     
+            Dim range As Object = objWordDoc.Range(0, 0)
+     
+            range.ParagraphFormat.Alignment = 1
+            range.Font.Bold = &H98967E
+            range.InsertBefore("Report Title")
+            range.Font.Name = "Verdana"
+            range.Font.Size = 20
+            range.InsertParagraphAfter()
+            range.InsertParagraphAfter()
+     
+            range.SetRange(range.End, range.End)
+     
+            objWordDoc.Tables.Add(range, 11, 3)
+     
+            With objWordDoc.tables(1)
+                .Rows.Item(1).Range.Font.Bold = &H98967E
+                .borders.InsideLineStyle = 1
+                .borders.OutsideLineStyle = 1
+                .rows(1).cells(1).range.text = "id"
+                .rows(1).cells(2).range.text = "name"
+                .rows(1).cells(3).range.text = "Value"
+            End With
+            objWordApp.visible = True
+            'objWordApp = Nothing
+        End Sub
+     
+    End Class
+
+'+++++++++++++++++++++++++++++++
+' Make a Word document.
+Private Sub btnGo_Click(ByVal sender As System.Object, ByVal _
+    e As System.EventArgs) Handles btnGo.Click
+    ' Get the Word application object.
+    Dim word_app As Word._Application = New _
+        Word.ApplicationClass()
+
+    ' Make Word visible (optional).
+    word_app.Visible = True
+
+    ' Create the Word document.
+    Dim word_doc As Word._Document = _
+        word_app.Documents.Add()
+
+    ' Create a header paragraph.
+    Dim para As Word.Paragraph = word_doc.Paragraphs.Add()
+    para.Range.Text = "Chrysanthemum Curve"
+    para.Range.Style = "Heading 1"
+    para.Range.InsertParagraphAfter()
+
+    ' Add more text.
+    para.Range.Text = "To make a chrysanthemum curve, use" & _
+        "the following " & _
+        "parametric equations as t goes from 0 to 21 * ? to" & _
+            "generate " & _
+        "points and then connect them."
+    para.Range.InsertParagraphAfter()
+
+    ' Save the current font and start using Courier New.
+    Dim old_font As String = para.Range.Font.Name
+    para.Range.Font.Name = "Courier New"
+
+    ' Add the equations.
+    para.Range.Text = _
+        "  r = 5 * (1 + Sin(11 * t / 5)) -" & vbCrLf & _
+        "      4 * Sin(17 * t / 3) ^ 4 *" & vbCrLf & _
+        "      Sin(2 * Cos(3 * t) - 28 * t) ^ 8" & vbCrLf & _
+            _
+        "  x = r * Cos(t)" & vbCrLf & _
+        "  y = r * Sin(t)"
+
+    ' Start a new paragraph and then switch back to the
+    ' original font.
+    para.Range.InsertParagraphAfter()
+    para.Range.Font.Name = old_font
+
+    ' Save the document.
+    Dim filename As Object = Path.GetFullPath( _
+        Path.Combine(Application.StartupPath, "..\\..")) & _
+        "\\test.doc"
+    word_doc.SaveAs(FileName:=filename)
+
+    ' Close.
+    Dim save_changes As Object = False
+    word_doc.Close(save_changes)
+    word_app.Quit(save_changes)
+End Sub

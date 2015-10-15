@@ -1,0 +1,26 @@
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\Interop.ADOX.dll
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\Interop.JRO.dll
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\Interop.MSDataReportLib.dll
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\Interop.MSFlexGridLib.dll
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\AxInterop.MSFlexGridLib.dll
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\CSP ticketing.vbproj.ResolveComReference.cache
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\bin\CSP_Ticketing.exe.manifest
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\bin\CSP_Ticketing.application
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\bin\CSP_Ticketing.exe
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\bin\CSP_Ticketing.xml
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\bin\Interop.ADOX.dll
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\bin\Interop.JRO.dll
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\bin\Interop.MSDataReportLib.dll
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\bin\Interop.MSFlexGridLib.dll
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\bin\AxInterop.MSFlexGridLib.dll
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\CSP_Ticketing.frmAbout.resources
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\CSP_Ticketing.FrmMain.resources
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\CSP_Ticketing.frmTickets.resources
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\CSP_Ticketing.frmLogin.resources
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\CSP_Ticketing.Resources.resources
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\CSP ticketing.vbproj.GenerateResource.Cache
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\CSP_Ticketing.exe.manifest
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\CSP_Ticketing.application
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\CSP_Ticketing.exe
+C:\Users\Deanj\Documents\Visual Studio 2008\Projects\CSP Ticketing\obj\Release\CSP_Ticketing.xml
